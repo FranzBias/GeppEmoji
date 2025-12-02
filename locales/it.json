@@ -1,0 +1,42 @@
+{
+  "menu.root": "Menu",
+  "menu.instructions": "Istruzioni",
+  "menu.shortcuts": "Scorciatoie",
+  "menu.about": "Info",
+  "menu.update_db": "Aggiorna database Emoji",
+
+  "category.all": "Tutte",
+  "category.recent": "Recenti",
+  "category.favorites": "Preferite",
+
+  "search.placeholder": "Cerca emoji...",
+
+  "instructions.title": "Istruzioni",
+  "instructions.body": "Come usare GeppEmoji:\n\n- All'avvio mostra la categoria \"Recenti\" e attiva subito la casella di ricerca.\n- Scegli una categoria oppure usa \"Recenti\" per vedere le ultime emoji usate.\n- Digita nel campo di ricerca per filtrare le emoji per nome o parola chiave.\n\nMouse / Tastiera:\n- Click sinistro o Invio: inserisce le emoji (anche quelle accumulate) e chiude.\n- Shift + click sinistro, click destro o Shift + Invio: aggiunge l'emoji al buffer senza chiudere.\n- Click centrale o Shift + T: apre l'editor delle parole chiave per l'emoji selezionata.\n- Esc: chiude la finestra senza fare nulla.",
+
+  "shortcuts.title": "Scorciatoie",
+  "shortcuts.body": "Scorciatoie da tastiera e mouse in GeppEmoji:\n\n- Frecce: spostano la selezione tra le emoji.\n- Invio: inserisce e incolla l'emoji corrente (più tutte quelle nel buffer).\n- Shift + Invio: aggiunge l'emoji al buffer, senza incollare.\n- Click sinistro: inserisce e incolla.\n- Shift + click sinistro: aggiunge al buffer, senza incollare.\n- Click destro: aggiunge al buffer, senza incollare.\n- Click centrale: apre l'editor delle parole chiave per quell'emoji.\n- Shift + T: apre l'editor delle parole chiave per l'emoji selezionata.\n- Esc: chiude la finestra.",
+
+  "about.title": "Info",
+  "about.body": "{app_name}\n\nSelettore di emoji con ricerca localizzata, categorie, preferiti e recenti.\n\nSviluppato da Francesco Bianchi con l'aiuto di Geppetto AI.",
+
+  "update.title": "Aggiorna database Emoji",
+  "update.button.run": "Avvia importazione",
+  "update.heading": "Come aggiornare il database delle Emoji",
+  "update.step1": "1. Apri il seguente link nel browser e salva il file:",
+  "update.step2": "2. Salva il file come <b>emoji-test.txt</b> nella cartella dell'applicazione:\n<tt>{base_dir}</tt>\n\n3. Dopo aver copiato il file nella cartella corretta,\n   premi il pulsante qui sotto per avviare l'importazione\n   delle nuove Emoji nel database dell'app.",
+
+  "update.error.title": "Errore aggiornamento",
+  "update.error.body": "Errore durante l'esecuzione di build_emoji_db.py:\n{error}",
+  "update.success.title": "Aggiornato",
+  "update.success.body": "Database Emoji aggiornato con successo.\n\nLe nuove emoji dovrebbero essere ora disponibili nell'app.",
+
+  "editor.title": "Modifica parole chiave Emoji",
+  "editor.search_label": "Chiave di ricerca per l'emoji: {emoji}",
+  "editor.desc": "Aggiungi qui le tue parole chiave personali, separate da una virgola \",\"",
+  "editor.defaults_title": "Le parole chiave predefinite per {emoji} sono:",
+  "editor.defaults.none": "(nessuna)",
+
+  "msg.error.xdotool_activate": "Errore nell'uso di xdotool (windowactivate): {error}",
+  "msg.error.xdotool_key": "Errore nell'uso di xdotool (key ctrl+v): {error}"
+}

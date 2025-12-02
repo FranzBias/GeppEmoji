@@ -1,0 +1,42 @@
+
+{
+  "menu.root": "Menu",
+  "menu.instructions": "Instructions",
+  "menu.shortcuts": "Shortcuts",
+  "menu.about": "About",
+  "menu.update_db": "Update Emoji database",
+
+  "category.all": "All",
+  "category.recent": "Recent",
+  "category.favorites": "Favorites",
+
+  "search.placeholder": "Search emoji...",
+
+  "instructions.title": "Instructions",
+  "instructions.body": "How to use GeppEmoji:\n\n- On startup it shows the 'Recent' category and focuses the search entry.\n- Choose a category or use 'Recent' to see your last used emoji.\n- Type in the search box to filter emoji by name or keyword.\n\nMouse / Keyboard:\n- Left click or Enter: insert the emoji (or accumulated emoji) and close.\n- Shift + left click, right click or Shift + Enter: add the emoji to the buffer without closing.\n- Middle click or Shift + T: edit custom keywords for the selected emoji.\n- Esc: close the window without doing anything.",
+
+  "shortcuts.title": "Shortcuts",
+  "shortcuts.body": "Keyboard and mouse shortcuts in GeppEmoji:\n\n- Arrow keys: move between emoji.\n- Enter: insert and paste the current emoji (plus any emoji already in the buffer).\n- Shift + Enter: add the emoji to the buffer, do not paste.\n- Left click: insert and paste.\n- Shift + left click: add to buffer, do not paste.\n- Right click: add to buffer, do not paste.\n- Middle click: open the keyword editor for that emoji.\n- Shift + T: open the keyword editor for the selected emoji.\n- Esc: close the window.",
+
+  "about.title": "About",
+  "about.body": "{app_name}\n\nEmoji picker with localized search, categories, favorites and recents.\n\nDeveloped by Francesco Bianchi with the help of Geppetto AI.",
+
+  "update.title": "Update Emoji database",
+  "update.button.run": "Run import",
+  "update.heading": "How to update the Emoji database",
+  "update.step1": "1. Open the following link in your browser and save the file:",
+  "update.step2": "2. Save the file as <b>emoji-test.txt</b> into the application folder:\n<tt>{base_dir}</tt>\n\n3. After copying the file into the correct folder,\n   press the button below to start the import process\n   for the new Emoji into the app database.",
+  "update.error.title": "Update error",
+  "update.error.body": "Error while running build_emoji_db.py:\n{error}",
+  "update.success.title": "Updated",
+  "update.success.body": "Emoji database updated successfully.\n\nNew emoji should now be visible in the app.",
+
+  "editor.title": "Edit emoji keywords",
+  "editor.search_label": "Search key for emoji: {emoji}",
+  "editor.desc": "Add your own search keywords here, separated by a comma \",\"",
+  "editor.defaults_title": "Default keywords for {emoji} are:",
+  "editor.defaults.none": "(none)",
+
+  "msg.error.xdotool_activate": "Error using xdotool (windowactivate): {error}",
+  "msg.error.xdotool_key": "Error using xdotool (key ctrl+v): {error}"
+}
