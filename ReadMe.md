@@ -281,7 +281,7 @@ If GeppEmoji is useful to you and you'd like to support the project:
 👉 **https://www.paypal.com/donate/?hosted_button_id=HUF5MYDG465RY**
 
 Scan the QR code:  
-![Donate QR-Code](assets/Donate%20QR-Code.png)
+![Donate QR-Code](assets/DonaQR-Code.png)
 
 A star on GitHub also means a lot 💙  
 ![GitHub stars](https://img.shields.io/github/stars/FranzBias/GeppEmoji)
