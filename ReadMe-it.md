@@ -374,7 +374,7 @@ Se **GeppEmoji** ti è utile e vuoi sostenere lo sviluppo,  puoi offrirmi un caf
 
 Oppure inquadra questo QR-code:
 
-![Donate QR-Code](assets/Donate QR-Code.png)
+![Donate QR-Code](assets/DonaQR-Code.png) 
 
 Grazie di cuore per qualsiasi contributo, anche solo una stellina su GitHub fa la differenza 💙
 ![GitHub stars](https://img.shields.io/github/stars/FranzBias/GeppEmoji)
