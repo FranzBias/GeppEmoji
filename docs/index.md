@@ -2,7 +2,7 @@
 
 ### A Smart Emoji Picker for Linux
 
-![Banner](../Smileys&Emotion.png)
+![Banner](../assets/People&Body.png)
 
 GeppEmoji is a fast, elegant and fully customizable **emoji picker for Linux desktops** (Cinnamon, GNOME, XFCE, KDE…).  
 Designed to stay out of the way until you need it, then boost your workflow with instant emoji insertion.
@@ -31,7 +31,7 @@ Typing automatically searches inside *All* categories.
 - Recent list (size configurable)  
 - **Ctrl+F** to toggle favorites  
 
-![Categories](../Animals&Nature.png)
+![Categories](../assets/Recent.png)
 
 ---
 
@@ -39,7 +39,7 @@ Typing automatically searches inside *All* categories.
 Emoji with skin‑tone variants are shown **only once**.  
 You choose the tone globally:
 
-![Skin Tone](../Shortcuts.png)
+![Skin Tone](../assets/Shortcuts.png)
 
 Select via:
 - toolbar buttons  
@@ -52,7 +52,7 @@ Middle‑click or **Shift + T** on any emoji → edit keywords.
 Add synonyms, translations, or personal tags.  
 Stored per language in `emoji_translations.json`.
 
-![Keyword Editor](../Edit.png)
+![Keyword Editor](../assets/Edit.png)
 
 ---
 
@@ -71,7 +71,7 @@ Unicode releases new emoji? No problem.
 2. Go to **Menu → Update Emoji Database**  
 3. Import → done
 
-![Update](../Update.png)
+![Update](../assets//Update.png)
 
 ---
 
@@ -131,7 +131,7 @@ If GeppEmoji makes your day easier, consider offering a coffee ❤️
 
 👉 **https://www.paypal.com/donate/?hosted_button_id=HUF5MYDG465RY**
 
-![Donate QR-Code](../Donate%20QR-Code.png)
+![Donate QR-Code](../assets/Donate%20QR-Code.png)
 
 ---
 
