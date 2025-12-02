@@ -35,7 +35,7 @@ If you find it useful, a ⭐ on the repository is always much appreciated 😊
 
 | **"Recent" category**                | !["Recent" category](assets/Recent.png)                               |
 | ------------------------------------ | --------------------------------------------------------------------- |
-| **Edit keyword** and **Preferences** | ![Preferences](assets/Pref.png)<br>![Keyword editor](assets/Edit.png) |
+| **Edit keyword** and **Preferences** | ![Preferences](assets/Pref.png) ![Keyword editor](assets/Edit.png) |
 | **Shortcuts**                        | ![Shortcuts](assets/Shortcuts.png)                                    |
 | **Update Emoji database**            | ![Update Emoji database](assets/Update.png)                           |
 
