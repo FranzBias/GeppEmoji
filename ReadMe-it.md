@@ -187,7 +187,7 @@ Inoltre, dalla stessa finestra puoi:
 - `emoji_translations.json`  
   File opzionale per **override e traduzioni locali**, ad esempio:
 
-  ```json
+```json
   {
     "by_shortcode": {
       ":red_heart:": {
@@ -217,6 +217,7 @@ Inoltre, dalla stessa finestra puoi:
     
 - `locales/*.json`  
     File di traduzione dell’interfaccia (es. `en.json`, `it.json`, `de.json`).
+
 ---
 
 ## #️⃣ Keyword italiane preconfigurate
