@@ -1,11 +1,8 @@
 # GeppEmoji
 
-![Python](https://img.shields.io/badge/python-3.10%2B-blue)  
-![GTK](https://img.shields.io/badge/GTK-3-lightgrey)  
-![Platform](https://img.shields.io/badge/platform-Linux-success)  
-![Project Status](https://img.shields.io/badge/status-active-brightgreen)  
-![License](https://img.shields.io/badge/license-MIT-green)  
-![GitHub stars](https://img.shields.io/github/stars/FranzBias/GeppEmoji)
+Another small **Desktop Emoji Picker** written in Python + GTK3
+
+![Python](https://img.shields.io/badge/python-3.10%2B-blue)  ![GTK](https://img.shields.io/badge/GTK-3-lightgrey)  ![Platform](https://img.shields.io/badge/platform-Linux-success)  ![Project Status](https://img.shields.io/badge/status-active-brightgreen)  ![License](https://img.shields.io/badge/license-MIT-green)  ![GitHub stars](https://img.shields.io/github/stars/FranzBias/GeppEmoji)
 
 GeppEmoji is a small **desktop emoji picker** written in Python + GTK3,  
 designed to work smoothly on Linux (Cinnamon, GNOME, etc.) and to integrate naturally  
@@ -13,13 +10,23 @@ with your workflow through a global keyboard shortcut.
 
 The idea is simple:
 
-> **Open GeppEmoji, pick one or more emoji, and it automatically pastes them  
-> into the window you were using before.**
+> **Open** GeppEmoji
+> **pick** one or more emoji
+> and it **automatically pastes** them into the window you were using before.
 
 ![Main window – “People & Body” category](assets/People&Body.png)
 
-There are other excellent apps like [Smile](https://github.com/mijorus/smile)  🙂🏿and [Emote](https://github.com/tom-james-watson/Emote), but something was always missing…  
-and that’s how **GeppEmoji** was born 😊
+There are other excellent apps that do practically the same job, such as [Smile](https://github.com/mijorus/smile) and [Emote](https://github.com/tom-james-watson/Emote).
+But I found that something was always missing:
+either no auto-paste (because I don't use GNOME 🙅‍♂️),
+or no search in my language,
+or no way to edit search keywords...
+
+So, with the help of my beloved AI “Geppetto”, **GeppEmoji** was born:
+an emoji picker tailored to my way of working – and, I hope,
+yours too.
+
+If you find it useful, a ⭐ on the repository is always much appreciated 😊
 
 ---
 
