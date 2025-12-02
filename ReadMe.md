@@ -32,9 +32,8 @@ If you find it useful, a ⭐ on the repository is always much appreciated 😊
 
 ## 🖼️ Screenshots:
 
-
-| **"Recent" category**                | !["Recent" category](assets/Recent.png)                               |
 | ------------------------------------ | --------------------------------------------------------------------- |
+| **"Recent" category**                | !["Recent" category](assets/Recent.png)                               |
 | **Edit keyword**                     | ![Keyword editor](assets/Edit.png)                                    |
 | **Preferences**                      | ![Preferences](assets/Pref.png)                                       |
 | **Shortcuts**                        | ![Shortcuts](assets/Shortcuts.png)                                    |
