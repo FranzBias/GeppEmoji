@@ -131,7 +131,7 @@ If GeppEmoji makes your day easier, consider offering a coffee ❤️
 
 👉 **https://www.paypal.com/donate/?hosted_button_id=HUF5MYDG465RY**
 
-![Donate QR-Code](../assets/Donate%20QR-Code.png)
+![Donate QR-Code](../assets/DonaQR-Code.png)
 
 ---
 
