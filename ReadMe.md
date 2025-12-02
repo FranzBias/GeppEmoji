@@ -6,8 +6,7 @@ Another small **Desktop Emoji Picker** written in Python + GTK3
 
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue)  ![GTK](https://img.shields.io/badge/GTK-3-lightgrey)  ![Platform](https://img.shields.io/badge/platform-Linux-success)  ![Project Status](https://img.shields.io/badge/status-active-brightgreen)  ![License](https://img.shields.io/badge/license-MIT-green)  ![GitHub stars](https://img.shields.io/github/stars/FranzBias/GeppEmoji)
 
-![geppemoji](geppemoji.png)
-<img src="geppemoji" width="200" height="200">
+<img src="geppemoji.png" width="200" height="200">
 
 
 GeppEmoji is a small **desktop emoji picker** written in Python + GTK3, designed to work smoothly on Linux (Cinnamon, GNOME, etc.) and to integrate naturally with your workflow through a global keyboard shortcut.
