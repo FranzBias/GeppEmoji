@@ -4,7 +4,7 @@
 
 Another small **Desktop Emoji Picker** written in Python + GTK3
 
-![Python](https://img.shields.io/badge/python-3.10%2B-blue)  ![GTK](https://img.shields.io/badge/GTK-3-lightgrey)  ![Platform](https://img.shields.io/badge/platform-Linux-success)  ![Project Status](https://img.shields.io/badge/status-active-brightgreen)  ![License](https://img.shields.io/badge/license-MIT-green)  ![GitHub stars](https://img.shields.io/github/stars/FranzBias/GeppEmoji)
+![Python](https://img.shields.io/badge/python-3.10%2B-blue)  ![GTK](https://img.shields.io/badge/GTK-3-lightgrey)  ![Platform](https://img.shields.io/badge/platform-Linux-success)  ![Project Status](https://img.shields.io/badge/status-active-brightgreen)  ![License](https://img.shields.io/badge/license-MIT-green)  ![GitHub stars](https://img.shields.io/github/stars/FranzBias/GeppEmoji)  [![Download](https://img.shields.io/github/v/release/FranzBias/GeppEmoji?label=Latest%20Release)](https://github.com/FranzBias/GeppEmoji/releases)
 
 <img src="geppemoji.png" width="200" height="200">
 
@@ -225,6 +225,78 @@ python3 geppemoji.py
 ```
 
 You can create a global keyboard shortcut in your desktop environment (e.g., Cinnamon).
+
+---
+
+## 🚀 Easy Installation Options (Linux)
+
+Besides the classic “clone + run” workflow, GeppEmoji also provides:
+
+- a **user-level install script** (`install_geppemoji.sh`)
+- a **Debian/LMDE package** (`.deb` file, built with `make_deb.sh`).
+
+Both options assume that the GTK dependencies are installed via your system package manager.
+
+#### Option 1 – Install via shell script (user-level, no root required)
+
+From inside the cloned repository:
+```bash
+chmod +x install_geppemoji.sh
+./install_geppemoji.sh
+```
+
+What this script does:
+
+  * copies the project into: ~/.local/share/geppemoji
+  * creates a local virtual environment in `~/.local/share/geppemoji/.venv` (with system GTK bindings available)
+  * installs the pure-Python dependencies from `requirements.txt`
+  * runs `build_emoji_db.py` to generate `emoji_data.json`
+  * creates a desktop launcher in: `~/.local/share/applications/geppemoji.desktop`
+
+After that, you should see “**GeppEmoji**” in your application menu.
+
+You can also bind a global shortcut to:
+`~/.local/share/geppemoji/.venv/bin/python ~/.local/share/geppemoji/geppemoji.py`
+
+#### System packages required (Debian / Ubuntu / Mint / LMDE):
+
+```bash
+sudo apt install python3-gi python3-gi-cairo gir1.2-gtk-3.0 xdotool
+```
+
+### Option 2 – Debian / LMDE package (.deb)
+
+If you prefer a classic system-level installation, **I have already included a .deb installation file** in this repository: `geppemoji_1.0.0-1_all.deb)`.
+
+However, if (incredibly 😁) you like to experiment and want to do it yourself, you can create it yourself by following these instructions:
+
+From inside the cloned repository:
+```bash
+chmod +x make_deb.sh
+./make_deb.sh
+```
+
+This will create a package like: `build_deb/geppemoji_1.0.0-1_all.deb`
+
+You can then install it with:
+```bash
+# `apt` will automatically pull and install required dependencies, or abort cleanly if something is missing.
+cd build_deb
+sudo apt install ./geppemoji_1.0.0-1_all.deb
+```
+
+What the .deb does:
+
+  * installs GeppEmoji into: /usr/share/geppemoji
+  * installs a launcher script: /usr/bin/geppemoji
+  * installs a desktop entry: /usr/share/applications/geppemoji.desktop
+
+After installation, you can simply run:
+```bash
+geppemoji
+```
+
+or launch it from your desktop environment menu.
 
 ---
 

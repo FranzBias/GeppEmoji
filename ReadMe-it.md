@@ -3,7 +3,7 @@
 
 Un altro piccolo **Selezionatore di emoji** da desktop scritto in Python + GTK3
 
-![Python](https://img.shields.io/badge/python-3.10%2B-blue)  ![GTK](https://img.shields.io/badge/GTK-3-lightgrey)  ![Platform](https://img.shields.io/badge/platform-Linux-success)  ![Project Status](https://img.shields.io/badge/status-active-brightgreen)  ![License](https://img.shields.io/badge/license-MIT-green)  ![GitHub stars](https://img.shields.io/github/stars/FranzBias/GeppEmoji)
+![Python](https://img.shields.io/badge/python-3.10%2B-blue)  ![GTK](https://img.shields.io/badge/GTK-3-lightgrey)  ![Platform](https://img.shields.io/badge/platform-Linux-success)  ![Project Status](https://img.shields.io/badge/status-active-brightgreen)  ![License](https://img.shields.io/badge/license-MIT-green)  ![GitHub stars](https://img.shields.io/github/stars/FranzBias/GeppEmoji) [![Download](https://img.shields.io/github/v/release/FranzBias/GeppEmoji?label=Latest%20Release)](https://github.com/FranzBias/GeppEmoji/releases)
 
 <img src="geppemoji.png" width="200" height="200">
 
@@ -52,10 +52,10 @@ Se ti torna utile, una ⭐ sul repository fa sempre molto piacere 😊
 - All’apertura la categoria selezionata è **Recent**, ma appena inizi a scrivere
   la ricerca viene fatta automaticamente su **tutte** le emoji.
 - La ricerca usa:
-  - nomi ufficiali
-  - keyword in inglese
-  - keyword nelle lingue configurate (es. italiano, tedesco)
-  - keyword personalizzate aggiunte dall’utente.
+	- nomi ufficiali
+	- keyword in inglese
+	- keyword nelle lingue configurate (es. italiano, tedesco)
+	- keyword personalizzate aggiunte dall’utente.
 
 ---
 
@@ -80,8 +80,8 @@ Se ti torna utile, una ⭐ sul repository fa sempre molto piacere 😊
   `Skin tone:  🖐  🖐🏻  🖐🏼  🖐🏽  🖐🏾  🖐🏿`
 
 - Puoi cambiare skin tone:
-  - dalla barra in basso (toggle button)
-  - dal menù `Menu → Skin tone…`.
+	  - dalla barra in basso (toggle button)
+	  - dal menù `Menu → Skin tone…`.
 - Quando cambi tono, le emoji visualizzate e quelle incollate usano automaticamente il nuovo colore.
 
 ---
@@ -94,22 +94,23 @@ Se ti torna utile, una ⭐ sul repository fa sempre molto piacere 😊
 - Puoi aggiungere le tue parole chiave, separate da virgola.
 - Le keyword sono **per lingua**, e vengono salvate in `emoji_translations.json` sotto `by_char`
 - L’editor mostra:
-  - emoji selezionata
-  - keyword personali modificabili
-  - keyword di default (lette dal database Unicode).
+	  - emoji selezionata
+	  - keyword personali modificabili
+	  - keyword di default (lette dal database Unicode).
 
 ---
 
 ### 📌 Buffer multi-emoji e incolla automatico
 
-- **Click sinistro** o **Enter**:
+**Click sinistro** o **Enter**:
   - aggiunge l’emoji al buffer,
   - incolla **tutte** le emoji accumulate nella finestra precedente,
   - chiude GeppEmoji.
-- **Shift + click sinistro**, **click destro** o **Shift + Enter**:
+**Shift + click sinistro**, **click destro** o **Shift + Enter**:
   - aggiunge l’emoji al buffer,
   - **non** incolla e **non** chiude.
-- Il contenuto del buffer viene mostrato nella **status bar** in basso.
+
+Il contenuto del buffer viene mostrato nella **status bar** in basso.
 
 ---
 
@@ -147,26 +148,26 @@ Dal menù `Menu → Update Emoji database`:
 Dal menù `Menu → Preferences` puoi configurare:
 
 - **Tema**:
-  - `System` (predefinito), `Light`, `Dark`.
+	  - `System` (predefinito), `Light`, `Dark`.
 - **Numero colonne** per la griglia di emoji.
 - **Numero massimo di recenti** visibili.
 - **Dimensione del font emoji**.
 - **Lingua dell’interfaccia**:
-  - `System default` oppure una delle lingue disponibili in `locales/*.json`
-    (es. `en`, `it`, `de`).
+	  - `System default` oppure una delle lingue disponibili in `locales/*.json`
+		(es. `en`, `it`, `de`).
 - **Debug log**:
-  - se attivo, abilita log extra su stderr
-  - le tooltip diventano più “ricche” (categoria, keyword, ecc.).
+	  - se attivo, abilita log extra su stderr
+	  - le tooltip diventano più “ricche” (categoria, keyword, ecc.).
 
 Inoltre, dalla stessa finestra puoi:
 
 - Aprire direttamente con il tuo editor:
-  - `emoji_translations.json`
-  - `config.json`
+	  - `emoji_translations.json`
+	  - `config.json`
 - Creare un **backup** (zip) con:
-  - `emoji_recent.json`
-  - `emoji_translations.json`
-  - `config.json`
+	  - `emoji_recent.json`
+	  - `emoji_translations.json`
+	  - `config.json`
 - **Ripristinare** un backup da un file `.zip`.
 
 ---
@@ -174,20 +175,20 @@ Inoltre, dalla stessa finestra puoi:
 ## 🏗️ Struttura dei file
 
 - `geppemoji.py`  
-  Applicazione principale GTK: finestra, FlowBox, ricerca, menù, editor di keyword,
-  buffer multi-emoji, incolla automatica, skin tone, status bar, preferenze, backup/restore.
+	Applicazione principale GTK: finestra, FlowBox, ricerca, menù, editor di keyword,
+	buffer multi-emoji, incolla automatica, skin tone, status bar, preferenze, backup/restore.
 
 - `build_emoji_db.py`  
-  Script che:
-  1. legge `emoji-test.txt` (locale, scaricato da Unicode)
-  2. genera `emoji_data.json`
-  3. applica eventuali override da `emoji_translations.json`.
+	Script che:
+		1. legge `emoji-test.txt` (locale, scaricato da Unicode)
+		2. genera `emoji_data.json`
+		3. applica eventuali override da `emoji_translations.json`.
 
 - `emoji_data.json`  
-  Database emoji **generato automaticamente** dallo script (non modificarlo a mano).
+	Database emoji **generato automaticamente** dallo script (non modificarlo a mano).
 
 - `emoji_translations.json`  
-  File opzionale per **override e traduzioni locali**, ad esempio:
+	File opzionale per **override e traduzioni locali**, ad esempio:
 
 ```json
   {
@@ -242,23 +243,17 @@ corrispondenze comode in italiano, ad esempio:
 
 Naturalmente puoi modificare tutto:
 
-- cancellare i gruppi che non ti piacciono,
-    
-- creare nuove famiglie di keyword (tristezza, cibo, animali, lavoro, musica…),
-    
-- usare l’editor interno per adattare le parole chiave al tuo modo di cercare.
-    
+- cancellare i gruppi che non ti piacciono,    
+- creare nuove famiglie di keyword (tristezza, cibo, animali, lavoro, musica…),    
+- usare l’editor interno per adattare le parole chiave al tuo modo di cercare.    
 
 ---
 
 ## 📦 Requisiti
 
-- **Python 3.10+**
-    
-- **GTK 3 + PyGObject**
-    
-- **xdotool** (per incollare automaticamente nella finestra precedente)
-    
+- **Python 3.10+**    
+- **GTK 3 + PyGObject**    
+- **xdotool** (per incollare automaticamente nella finestra precedente)    
 
 Per i pacchetti Python, vedi `requirements.txt`.
 
@@ -291,6 +286,78 @@ Nel tuo ambiente desktop (es. Cinnamon) puoi creare una
 
 ---
 
+## 🚀 Installazione facilitata (Linux)
+
+Oltre al classico flusso “clona il repository e lancia lo script”, GeppEmoji offre anche:
+
+- uno **script di installazione utente** (`install_geppemoji.sh`)
+- un **pacchetto Debian/LMDE** (`.deb`, creato con `make_deb.sh`).
+
+Entrambe le opzioni presuppongono che le dipendenze GTK siano installate tramite il gestore pacchetti del sistema.
+
+#### Opzione 1 – Installazione tramite script `.sh` (utente, senza root)
+
+Dalla cartella del repository clonato:
+
+```bash
+chmod +x install_geppemoji.sh
+./install_geppemoji.sh
+```
+
+Lo script esegue in automatico:
+
+- copia il progetto in ~/.local/share/geppemoji
+- crea un ambiente virtuale locale in `~/.local/share/geppemoji/.venv` (usando le librerie GTK già installate nel sistema)
+- installa le dipendenze “pure Python” da requirements.txt
+- esegue `build_emoji_db.py` per generare `emoji_data.json`
+- crea un lanciatore desktop in `~/.local/share/applications/geppemoji.desktop`
+
+Dopo l’installazione dovresti vedere “GeppEmoji” nel menù delle applicazioni.
+
+Puoi anche creare una scorciatoia globale che esegua:
+
+`~/.local/share/geppemoji/.venv/bin/python ~/.local/share/geppemoji/geppemoji.py`
+
+Pacchetti di sistema necessari (Debian / Ubuntu / Mint / LMDE):
+```bash
+sudo apt install python3-gi python3-gi-cairo gir1.2-gtk-3.0 xdotool
+```
+
+#### Opzione 2 – Pacchetto Debian / LMDE (.deb)
+
+Se preferisci una installazione “di sistema” in stile classico, puoi creare un pacchetto `.deb`.
+
+Dalla cartella del repository:
+```bash
+chmod +x make_deb.sh
+./make_deb.sh
+```
+
+Questo comando crea il file: `build_deb/geppemoji_1.0.0-1_all.deb`
+
+che puoi installare con:
+```bash
+
+cd build_deb
+sudo apt install ./geppemoji_1.0.0-1_all.deb
+```
+
+`apt` si occuperà automaticamente di installare le dipendenze necessarie, oppure interromperà l’installazione in modo pulito se qualcosa non è disponibile.
+Il pacchetto .deb:
+
+- installa GeppEmoji in `/usr/share/geppemoji`
+- aggiunge lo script `/usr/bin/geppemoji`
+- aggiunge il file desktop in `/usr/share/applications/geppemoji.desktop`
+
+Dopo l’installazione ti basta eseguire:
+```bash
+geppemoji
+```
+
+oppure avviarlo dal menù del tuo ambiente desktop.
+
+---
+
 ## 🖱️ Uso rapido & scorciatoie
 
 - **Freccette**: muoversi tra le emoji.
@@ -317,22 +384,16 @@ Quando qualcosa non funziona:
     
 2. Indica:
     
-    - versione di Python;
-        
-    - desktop environment (Cinnamon, GNOME, ecc.);
-        
-    - come hai lanciato GeppEmoji (da terminale? da scorciatoia?).
-        
+    - versione di Python;        
+    - desktop environment (Cinnamon, GNOME, ecc.);        
+    - come hai lanciato GeppEmoji (da terminale? da scorciatoia?).        
 3. Se possibile:
     
-    - incolla l’output del terminale;
-        
-    - allega uno screenshot (come quelli qui sopra);
-        
-    - se hai attivato `debug` in `Preferences → Debug log`, copia anche eventuali log utili.
-        
+    - incolla l’output del terminale;        
+    - allega uno screenshot (come quelli qui sopra);        
+    - se hai attivato `debug` in `Preferences → Debug log`, copia anche eventuali log utili.        
 
-Più dettagli → più facile (e veloce) capire cosa succede.
+Più dettagli rendi noti → più facile (e veloce) capire cosa succede.
 
 ---
 
