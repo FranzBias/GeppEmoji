@@ -286,7 +286,7 @@ Nel tuo ambiente desktop (es. Cinnamon) puoi creare una
 
 ---
 
-## 🚀 Installazione facilitata (Linux)
+## 🌟 Installazione facilitata (Linux)
 
 Oltre al classico flusso “clona il repository e lancia lo script”, GeppEmoji offre anche:
 
@@ -343,6 +343,7 @@ sudo apt install ./geppemoji_1.0.0-1_all.deb
 ```
 
 `apt` si occuperà automaticamente di installare le dipendenze necessarie, oppure interromperà l’installazione in modo pulito se qualcosa non è disponibile.
+
 Il pacchetto .deb:
 
 - installa GeppEmoji in `/usr/share/geppemoji`

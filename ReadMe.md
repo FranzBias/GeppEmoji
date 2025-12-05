@@ -228,7 +228,7 @@ You can create a global keyboard shortcut in your desktop environment (e.g., Cin
 
 ---
 
-## 🚀 Easy Installation Options (Linux)
+## 🌟 Easy Installation Options (Linux)
 
 Besides the classic “clone + run” workflow, GeppEmoji also provides:
 
